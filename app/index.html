@@ -1,0 +1,193 @@
+<!--#set var="title" value="Neuro tools" -->
+<!--#include virtual="/parts/head.html" -->
+	<main>
+		<div class="main-wrapper">
+			<div class="wrapper">
+				<div>
+					<p>Технічна частина</p>
+					<input type="text" name="fileName" placeholder="Назва виписки" value="Виписка">
+					<input type="text" name="department" placeholder="Відділення" value="6">
+					<input type="text" name="doctor_name" placeholder="Лікуючий лікар" value="к.мед.н. Чебурахін В.В.">
+					<input type="text" name="zav_name" placeholder="Завідуючий відділення" value="д.мед.н. Костюк К.Р.">
+					<div class="radio-wrapper">
+						<label>
+							<input type="radio" name="sex" value="man" checked>
+							Чоловік
+						</label>
+						<label>
+							<input type="radio" name="sex" value="women">
+							Жінка
+						</label>
+						
+					</div>
+					<!-- <input type="text" name="sex" placeholder="Хворий \ Хвора">
+					<input type="text" name="was" placeholder="знаходився \ знаходилась"> -->
+					
+
+				</div>
+
+				<div>
+					<p>Номер історії</p>
+					<input type="text" name="id" placeholder="4227/22">
+					<p>ФІО</p>
+					<input type="text" name="name" placeholder="Тевзадзе Давид">
+					<p>Дата народження</p>
+					<input type="text" name="bd" placeholder="280296">
+					<p>Місце проживання</p>
+					<textarea type="text" name="place_of_life" placeholder="Київ"></textarea>
+					<p>Місце роботи</p>
+					<textarea type="text" name="place_of_work" placeholder="ІНХ"></textarea>
+				</div>
+
+				<div>
+					<p>
+						Діагноз
+					</p>
+					<textarea type="text" name="diagnos" placeholder="Гліома"></textarea>
+					<p>
+						Дата поступлення
+					</p>
+					<input type="text" name="hd" placeholder="171122">
+					<p>
+						Дата виписки
+					</p>
+					<input type="text" name="ed" placeholder="221122">
+				</div>
+			</div>
+			<div class="wrapper">
+				<div>
+					<p>
+						Скарги
+					</p>
+					<textarea type="text" name="complaints" placeholder="Загальномозкова симптоматика"></textarea>
+					<p>
+						Анамнез
+					</p>
+					<textarea type="text" name="anamnesis" placeholder="Вважає себе хворою">Зі слів пацієнта та даних представленої медичної документації відмічає початок захворювання. З метою поглибленого обстеження та визначення подальшої тактики лікування госпіталізовано до ДУ "ІНХ ім. А.П. Ромоданова".</textarea>
+					<p>
+						Неврологічний статус
+					</p>
+					<textarea type="text" name="status" placeholder="Свідомість ясна (15ю за ШКГ)">Свідомість – ясна (15б за ШКГ). Менінгеальні ознаки негативні. Зіниці S=D, фотореакції та стовбурові рефлекси збережені, живі. Обличчя  симетричне. Глибокі рефлекси S=D, рухи збережені в повному обсязі, чутливість збережена в повному обсязі. ПНП виконує задовільно, похитування в позі Ромберга. ФТО контролює. </textarea>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="list analize">
+					<p>
+						Окуліст
+					</p>
+					<input type="text" name="oculist-date" placeholder="Дата">
+					<input type="text" name="oculist-OD" placeholder="OD">
+					<input type="text" name="oculist-OS" placeholder="OS">
+					<input type="text" name="oculist-diagnos" placeholder="Висновок" class="long">
+				</div>
+
+				<div class="list analize">
+					<p>
+						Терапевт
+					</p>
+					<input type="text" name="terapeut-date" placeholder="Дата">
+					<input type="text" name="terapeut-diagnos" placeholder="Висновок" class="long">
+				</div>
+
+				<div class="list">
+					<p>
+						Рентген ОГП
+					</p>
+					<input type="text" name="ro-date" placeholder="Дата">
+					<input type="text" name="ro-diagnos" placeholder="Висновок" class="long">
+				</div>
+
+				<div class="list">
+					<p>
+						Група крові та резус-фактор
+					</p>
+					<input type="text" name="blood_group-date" placeholder="Дата">
+					<input type="text" name="blood_group-group" placeholder="А(ІІ)">
+					<input type="text" name="blood_group-resus" placeholder="+">
+				</div>
+
+				<div class="list">
+					<p>
+						Експрес тест віруси
+					</p>
+					<input type="text" name="express_group-date" placeholder="Дата">
+					<input type="text" name="express_group-hbc" placeholder="-" value="-">
+					<input type="text" name="express_group-hiv" placeholder="-" value="-">
+					<input type="text" name="express_group-hcv" placeholder="-" value="-">
+					<input type="text" name="express_group-rw" placeholder="-" value="-">
+				</div>
+
+				<div class="list">
+					<p>
+						Загальний аналіз крові
+					</p>
+					<input type="text" name="zak-date" placeholder="Дата">
+					<input type="text" name="zak-leik" placeholder="Лекоцити">
+					<input type="text" name="zak-hb" placeholder="Гемоглобін">
+					<input type="text" name="zak-er" placeholder="Еритроцити">
+					<input type="text" name="zak-tr" placeholder="Тромбоцити">
+					<input type="text" name="zak-soe" placeholder="ШОЕ">
+				</div>
+
+				<div class="list">
+					<p>
+						Біохімічний аналіз крові
+					</p>
+					<input type="text" name="bx-date" placeholder="Дата">
+					<input type="text" name="bx-prot" placeholder="Білок">
+					<input type="text" name="bx-gluc" placeholder="Глюкоза">
+					<input type="text" name="bx-crea" placeholder="Креатинін">
+					<input type="text" name="bx-ur" placeholder="Сечовина">
+				</div>
+
+				<div class="list">
+					<p>
+						Коагулограма
+					</p>
+					<input type="text" name="cg-date" placeholder="Дата">
+					<input type="text" name="cg-pch" placeholder="Протромбіновий час">
+					<input type="text" name="cg-pi" placeholder="Протромбіновий індекс">
+					<input type="text" name="cg-fg" placeholder="Фібриноген">
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="list">
+					<p>
+						Операція
+					</p>
+					<input type="text" name="operation-date" placeholder="Дата">
+					<input type="text" name="operation-cod" placeholder="Код">
+					<input type="text" name="operation-name" placeholder="Название операции">
+				</div>
+
+				<div class="list">
+					<p>
+						Патогістологічне заключення
+					</p>
+					<input type="text" name="pgz-date" placeholder="Дата">
+					<input type="text" name="pgz-number" placeholder="Номер">
+					<input type="text" name="pgz-diagnosis" placeholder="Висновок">
+				</div>
+
+				<div class="list">
+					<p>
+						Післяопераційний період та проведене лікування
+					</p>
+					<textarea type="text" name="post_op_or_treatment">В післяопераційному періоді без нової неврологічної вогнищевої симптоматики. Рана загоїлась первинним натягом. Шви знято на 7 день.</textarea>
+				</div>
+
+			</div>
+			<div class="recomendations wrapper">
+				<p>Рекомендації</p>
+				<div class="rec-inputs">
+					<input type="text" name="recomendation" value="Контрольне МРТ головного мозку з в/в контрастуванням  через 3 місяці, консультація нейрохірурга">
+				</div>
+				<div class="buttons">
+					<button class="plus">+</button><button class="minus">-</button>
+				</div>
+			</div>
+		</div>
+		<button onclick="generate()" class="finish">Створити виписку</button>
+	</main>
+	
+<!--#include virtual="/parts/foot.html" -->

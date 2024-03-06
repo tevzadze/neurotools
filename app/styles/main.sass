@@ -1,0 +1,114 @@
+@import './common/vars.sass'
+@import './common/gem.scss'
+@import 'blocks/**/*'
+
+*
+	box-sizing: border-box
+
+html, body
+	width: 100%
+
+body,
+main
+	overflow-x: hidden
+
+body
+	display: flex
+	flex-direction: column
+	font-family: 'Montserrat', sans-serif
+	font-size: gem(16)
+	line-height: gem(20)
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-rendering: optimizeLegibility
+
+a
+	text-decoration: none
+	outline: none
+
+img
+	max-width: 100%
+	height: auto
+
+section
+	position: relative
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	// visibility: hidden
+.container
+	position: relative
+	width: var(--container-width)
+	min-width: var(--container-width)
+	margin: 0 auto
+
+input , textarea
+	margin: 0
+	padding: gem(10) gem(10)
+	height: gem(40)
+	width: gem(270)
+	resize: none
+	&::-webkit-input-placeholder,
+	&::placeholder
+		transition: all .3s
+	&:focus
+		&::-webkit-input-placeholder,
+		&::placeholder
+			color: transparent
+input
+	margin-bottom: gem(5)
+textarea
+	height: auto
+	min-height: gem(100)
+button
+	cursor: pointer
+	height: gem(50)
+	width: gem(270)
+	margin-top: gem(50)
+//start here
+main
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: gem(50) 0
+div 
+	display: flex
+	flex-direction: column
+.list
+	flex-direction: row
+	flex-wrap: wrap
+	width: gem(270)
+	p
+		width: gem(270)
+		text-align: center
+p
+	font-size: gem(20)
+	margin: gem(10) 0
+	width: 100%
+.wrapper
+	margin-bottom: gem(100)
+.main-wrapper
+	width: 100%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-evenly
+	align-items: flex-start
+.buttons
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	button
+		margin: 0
+		width: gem(130)
+.radio-wrapper
+	display: flex
+	flex-direction: row
+label
+	display: flex
+	align-items: center
+	margin-right: gem(20)
+	input
+		width: gem(30)
+		margin-right: gem(10)
