@@ -7,3 +7,6 @@
 /app/css/
 /**/app.min.js
 /dist/
+
+# Local Netlify folder
+.netlify
